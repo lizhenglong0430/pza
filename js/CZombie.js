@@ -27,7 +27,7 @@
         Ornaments: 0,
         OrnHP: 0,
         OSpeed: 1.6,
-        Speed: 10,  // Speed:1.6
+        Speed: 1.6,  // Speed:1.6
         CSS_fliph: "",
         CSS_alpha: "",
         AKind: 0,

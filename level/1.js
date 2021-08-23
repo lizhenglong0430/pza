@@ -1,6 +1,6 @@
 ﻿oS.Init({
     PName: [oPeashooter],
-    ZName: [oZombie],
+    ZName: [oZombie, oMustacheZombie, oConeheadZombie, oBucketheadZombie, oFootballZombie, oHeiFootballZombie, oCFootballZombie, oPoleVaultingZombie, oCPoleVaultingZombie, oNewspaperZombie, oScreenDoorZombie, oTrashZombie, oDuckyTubeZombie1, oDuckyTubeZombie2, oDuckyTubeZombie3, oDuckyTubeZombie4, oSnorkelZombie, oCSnorkelZombie, oSubZombie, oSmallZombie, oSmallDuckyTubeZombie1, oSmallConeheadZombie, oSmallFootballZombie, oDolphinRiderZombie, oCDolphinRiderZombie, oImp, oJX, oJackinTheBoxZombie, oCJackinTheBoxZombie, oCZombie, oCConeheadZombie, oCBucketheadZombie, othugZombie, oEunZombie, oZZ, oXBZombie, oCXZombie, oCNewspaperZombie, oLGBOSS, oWJY, oWJY1, oEmperor, oDancingZombie, oBackupDancer],
     PicArr: function() {
         var a = oSunFlower.prototype,
         b = a.PicArr;
@@ -43,7 +43,7 @@
                     }
                 },
                 []);
-                innerText(c, "哈罗，苏老板(点击继续)");
+                innerText(c, "哈喽，各位盆友们(点击继续)");
                 break;
             case 1:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
@@ -198,26 +198,47 @@
         })(283, 122, 68, 117, 73, 71, 131, 511)
     }
 },
+// {
+//     AZ: [[oZombie, 5, 1]],
+//     FlagNum: 5,
+//     FlagToSumNum: {
+//         a1: [3],
+//         a2: [1, 2]
+//     },
+//     FlagToMonitor: {
+//         4 : [ShowFinalWave, 0]
+//     },
+//     FlagToEnd: function() {
+//         NewImg("imgSF", "images/Card/Plants/SunFlower.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+//             onclick: function() {
+//                 GetNewCard(this, oSunFlower, 2)
+//             }
+//         });
+//         EditImg($("PointerUD"), 0, "images/interface/PointerDown.gif", {
+//             left: "676px",
+//             top: "295px",
+//             visibility: "visible"
+//         })
+//     }
+// });
 {
-    AZ: [[oZombie, 5, 1]],
-    FlagNum: 5,
+    AZ: [[oZombie, 1, 1], [oMustacheZombie, 1, 2],[oConeheadZombie, 1, 3],[oBucketheadZombie, 1, 4],[oFootballZombie, 1, 5],[oHeiFootballZombie, 1, 6],[oCFootballZombie, 1, 7],[oPoleVaultingZombie, 1, 8],[oCPoleVaultingZombie, 1, 9],[oNewspaperZombie, 1, 10],[oCNewspaperZombie, 1, 11],[oScreenDoorZombie, 1, 12],[oTrashZombie, 1, 11],[oDuckyTubeZombie1, 1, 12],[oDuckyTubeZombie2, 1, 11],[oDuckyTubeZombie3, 1, 12],[oDuckyTubeZombie4, 1, 11],[oSnorkelZombie, 1, 10],[oCSnorkelZombie, 1, 9],[oSubZombie, 1, 8],[oSmallZombie, 1, 7],[oSmallDuckyTubeZombie1, 1, 6],[oSmallConeheadZombie, 1, 5],[oSmallFootballZombie, 1, 4],[oDolphinRiderZombie, 1, 2],[oCDolphinRiderZombie, 1, 3],[oImp, 1, 4],[oJX, 1, 5],[oJackinTheBoxZombie, 1, 6],[oCJackinTheBoxZombie, 1, 7],[oCZombie, 1, 8],[oCConeheadZombie, 1, 9],[oCBucketheadZombie, 1, 10],[othugZombie, 1, 11],[oEunZombie, 1, 12],[oZZ, 1, 11],[oXBZombie, 1, 10],[oXBZombie, 1, 9],[oCXZombie, 1, 8],[oDancingZombie, 1, 5],[oLGBOSS, 1, 16, [16]], [oWJY1, 1, 16, [16]], [oWJY, 1, 16, [16]],[oEmperor, 1, 16, [16]]],
+    FlagNum: 16,
     FlagToSumNum: {
-        a1: [3],
-        a2: [1, 2]
+        a1: [48, 170, 291, 342, 386],
+        a2: [48, 170, 291, 342, 386]
     },
     FlagToMonitor: {
-        4 : [ShowFinalWave, 0]
+        3 : [ShowLargeWave, 0],
+        7 : [ShowLargeWave, 0],
+        11 : [ShowLargeWave, 0],
+        15 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/SunFlower.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
             onclick: function() {
-                GetNewCard(this, oSunFlower, 2)
+                GetNewCard(this, oGoldenPrize, 251)
             }
         });
-        EditImg($("PointerUD"), 0, "images/interface/PointerDown.gif", {
-            left: "676px",
-            top: "295px",
-            visibility: "visible"
-        })
     }
 });
